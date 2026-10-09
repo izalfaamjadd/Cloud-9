@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(194, 156, 53);
+}
+
+#app-title {
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+
+#mainapp{
+    border-radius: 100px;
+    height: 400px;
+    display: flex;
+    margin-left: 480px;
+    margin-top: 100px;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: normal;
+}
