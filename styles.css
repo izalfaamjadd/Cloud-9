@@ -1,12 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
 body {
-    background-color: rgb(194, 156, 53);
+    background-color: #158a91;
+    
 }
 
 #app-title {
     text-align: center;
+    font-size: 45px;
     -webkit-user-select: none;
     user-select: none;
     cursor: default;
+    color: #fff;
+    font-family: Pixelify Sans;
+    margin-top: 40px;
 }
 
 
@@ -15,9 +23,19 @@ body {
     height: 400px;
     display: flex;
     margin-left: 480px;
-    margin-top: 100px;
+    margin-top: 70px;
     width: 400px;
-    background-color: rgb(0, 0, 0);
+    background-color: #0c4c50;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#bg-night{
+    border-radius: 100px;
+    border: 6px solid #fff ;
+    height: 390px;
+    width: 390px;
+    display: flex;
     font-size: 16px;
     font-weight: normal;
 }
