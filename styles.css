@@ -39,3 +39,18 @@ body {
     font-size: 16px;
     font-weight: normal;
 }
+
+#bg-night:hover{
+    background-image: url('icons/sparkle day.png');
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* #header-div{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-family: Pixelify Sans;
+} */
