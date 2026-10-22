@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+
+:root {
+  --primary-color: violet;
+  --secondary-color:  rgb(255, 217, 255);
+  --background-color: linear-gradient(
+    135deg,
+    rgb(56, 12, 56),
+    rgb(100, 27, 70)
+  );
+  --border-color: #fdd0d0;
+  --text-color: rgb(87, 10, 10);
+  --font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+  /* background-color: rgb(56, 12, 56); */
+  background: linear-gradient(135deg, rgb(56, 12, 56), rgb(100, 27, 70));
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#app-title {
+  text-align: center;
+  font-size: 45px;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  color: rgb(255, 217, 255);
+  font-family: Pixelify Sans;
+  margin-top: 40px;
+}
+
+#mainapp {
+  border-radius: 100px;
+  height: 430px;
+  border: 5px solid rgb(255, 217, 255);
+  border-style: dashed;
+  display: flex;
+  /* margin-left: 480px;
+    margin-top: 70px; */
+  /* width: 400px; */
+  width: 100%;
+  max-width: 400px;
+  /* background: linear-gradient(135deg, #0c4c50, #158a91); */
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 399px;
+  background-image:
+    repeating-linear-gradient(rgba(83, 0, 83, 0.9), rgba(80, 20, 77, 0.3)),
+    url("icons/pixel_art_large.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  height: 430px;
+  overflow: hidden;
+}
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: var(--border-color);
+  box-sizing: border-box;
+}
+
+#search-input {
+  background: var(--border-color);
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
+  border-style: dotted;
+  width: 240px;
+  height: 35px;
+  padding: 0 15px;
+  text-align: center;
+  font-family: Pixelify Sans;
+  -webkit-text-fill-color: rgb(87, 10, 10);
+  box-sizing: border-box;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#search-icon {
+  height: 40px;
+  width: 38px;
+  padding-top: 0;
+}
+
+.weather-icon {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 2px;
+}
+
+.weather {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  -webkit-text-fill-color: var(--secondary-color);
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    width:320px;
+    margin-top: 5px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img{
+    width: 30px;
+    height: 30px;
+}
+
+.wind, .humidity{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: var(--font-family);
+    -webkit-text-fill-color: var(--secondary-color);
+    line-height: 1.2;
+    margin:0;
+}
+
+.detail-weather{
+    font-weight: bold;
+    padding-top: -25px;
+    font-size: 10px;
+    text-align: left;
+    font-family: var(--font-family);
+    -webkit-text-fill-color: var(--secondary-color);
+    margin: 3px 0 0 0;
+}
